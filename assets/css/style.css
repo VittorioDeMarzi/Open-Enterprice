@@ -63,7 +63,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 30px 50px 0px 50px;
-  margin-bottom: -40px;
+  margin-bottom: 0px;
 }
 
 nav h3 {
@@ -72,14 +72,17 @@ nav h3 {
   font-weight: 500;
 }
 
-nav div {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+nav div a {
+    /* margin-left: 2vw; */
+    padding: 5px 10px;
+}
+
+nav div a:hover {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .requestBtn {
+    color:rgb(111, 168, 147);
 }
 
 /* A new model section */
@@ -108,8 +111,13 @@ header section p {
 
 .btn {
   background-color: rgb(111, 168, 147);
+  color: white;
   padding: 20px;
   border-radius: 10px;
+}
+
+.btn:hover {
+   background-color:rgba(111, 168, 147, 0.478);
 }
 
 /* !main */
@@ -129,18 +137,25 @@ header section p {
 
 .work-meaning-box {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 100px;
 }
 
+.remagining .work-meaning-box p {
+    margin: 0;
+}
+
 .work-meaning-box article {
   background-color: white;
   width: 35%;
-  height: 45vh;
   padding: 40px;
   border-radius: 20px;
+  box-shadow: 0 0 2px black;
+}
+
+.work-meaning-box article:hover {
+    box-shadow: 0 0 5px black;
 }
 
 .work-meaning-box h3 {
@@ -183,4 +198,75 @@ header section p {
   width: 30%;
   padding: 30px;
   justify-self: center;
+  margin-bottom: 60px;
+  box-shadow: 0 0 2px black;
+}
+
+.help-us article:hover {
+    box-shadow: 0 0 5px black;
+
+}
+
+.apply {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.help-us p:nth-of-type(1) {
+  margin: 10% 0;
+}
+
+.help-us .apply p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.aut {
+  background-color: rgb(111, 168, 147);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+#more {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+#more a {
+  background-color: rgba(48, 48, 49, 1);
+  color: rgb(248, 248, 248);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#more a:hover {
+    background-color: rgba(48, 48, 49, 0.5);
+
+}
+
+/* ! footer */
+
+footer .members h2 {
+  margin: 0 0 3vh 0;
+}
+
+footer .members p {
+  margin-bottom: 5vh;
+}
+
+footer section:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+footer section:last-child a {
+    padding: 5px 10px;
+}
+
+footer section:last-child a:hover {
+    color: rgba(0, 0, 0, 0.3);
 }
